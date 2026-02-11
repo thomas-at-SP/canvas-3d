@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Canvas, Image and Text Position Layout with Multiple Canvases</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<title>Image and Text Position Layout with Flexible Display</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="./styles/style.css">
+		<script type="importmap">
+			{
+				"imports": {
+					"threepipe": "https://unpkg.com/threepipe/dist/index.mjs"
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="parent-container">
+			<!-- Left Aligned -->
+			<div class="child-container">
+				<div class="alignment header-text">Left-Aligned 3D Canvas and Text</div>
+				<div class="alignment child-left-aligned-image"><canvas id="canvas1" class="canvas canvas-left"></canvas></div>
+				<div class="alignment child-left-aligned-text"><span class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></div>
+			</div>
+		
+			<!-- Center Aligned -->
+			<div class="child-container">
+				<div class="alignment header-text">Center-Aligned Image and Text</div>
+				<div class="alignment child-center-aligned-image"><img src="./assets/image 2.jpg" alt="Center Image" class="image"></div>
+				<div class="alignment child-center-aligned-text"><span class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></div>
+			</div>
+		
+			<!-- Right Aligned -->
+			<div class="child-container">
+				<div class="alignment header-text">Right-Aligned 3D Canvas and Text</div>
+				<div class="alignment child-right-aligned-image"><canvas id="canvas2" class="canvas canvas-right"></canvas></div>
+				<div class="alignment child-right-aligned-text"><span class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></div>
+			</div>
+		</div>
+
+		<script src="./scripts/main.js" type="module"></script>
+	</body>
 </html>

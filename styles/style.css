@@ -1,0 +1,111 @@
+/* Apply common styling universally */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Parent container for all three sections */
+.parent-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Stack divs vertically */
+  gap: 0px; /* Spacing between sections */
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	z-index: -1;
+}
+
+.child-container {
+	height: 100vh; /* Content occupies 100% of viewport height */
+}
+
+/* Common styling for all alignment divs */
+.alignment {
+  display: flex; /* Enable flex box for alignment */
+  align-items: center; /* Vertically center image and text */
+  border: 1px solid black; /* Optional: visual separation for debugging purpose */
+	z-index: 1;
+}
+
+/* Left-aligned content for image */
+.child-left-aligned-image {
+	height: 65vh; /* Image occupies 60% of viewport height */
+  justify-content: flex-start; /* Align content to left */
+	padding-left: 50px;
+	background-color: darkgray;
+}
+
+/* Left-aligned content for text */
+.child-left-aligned-text {
+	height: 25vh; /* Image occupies 30% of viewport height */
+  justify-content: flex-start; /* Align content to left */
+	padding-left: 50px;
+	text-align: left;
+	background-color: darkgray;
+}
+
+/* Center-aligned content for image */
+.child-center-aligned-image {
+	height: 65vh; /* Image occupies 60% of viewport height */
+  justify-content: center; /* Center content */
+	background-color: gray;
+}
+
+/* Center-aligned content for text */
+.child-center-aligned-text {
+	height: 25vh; /* Image occupies 30% of viewport height */
+  justify-content: center; /* Center content */
+	text-align: center;
+	background-color: gray;
+}
+
+/* Right-aligned content for image */
+.child-right-aligned-image {
+	height: 65vh; /* Image occupies 60% of viewport height */
+  justify-content: flex-end; /* Align content to right */
+	padding-right: 50px;
+	background-color: dimgray;
+}
+
+/* Right-aligned content for text */
+.child-right-aligned-text {
+	height: 25vh; /* Image occupies 30% of viewport height */
+  justify-content: flex-end; /* Align content to right */
+	padding-right: 50px;
+	text-align: right;
+	background-color: dimgray;
+}
+
+/* Styling for images */
+.image {
+  max-height: 90%; /* Prevent image from exceeding div height */
+  margin-right: 10px; /* Space between image and text */
+}
+
+/* Styling for header texts */
+.header-text {
+	height: 10vh; /* Image occupies 10% of viewport height */
+	font-size: 50px;
+	font-weight: bold;
+	padding-left: 50px;
+	background-color: lightgray;
+}
+
+/* Styling for body text */
+.body-text {
+  font-size: 22px; /* Adjust font size as needed */
+  line-height: 1.5; /* Ensure good spacing for multiple lines */
+	width: 1000px;
+}
+
+.canvas {
+  width: 600px;
+  height: 600px;
+}
+
+.canvas-left {
+	background-image: linear-gradient(to right, #00FFFF, #4682B4); /* Background color with left to right linear gradient for 3D canvas */
+}
+
+.canvas-right {
+	background-image: linear-gradient(to bottom, orange, #FF3131); /* Background color with top to bottom linear gradient for 3D canvas */
+}
